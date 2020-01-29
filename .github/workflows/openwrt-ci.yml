@@ -15,8 +15,8 @@ on:
   #    - master
   schedule:
      - cron: 0 20 * * *
-  #release:
-    #types: [published]
+  release:
+    types: [published]
 
 jobs:
 
@@ -98,9 +98,12 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_x86=y
-          CONFIG_TARGET_x86_64=y
-          CONFIG_TARGET_x86_64_Generic=y
+          #CONFIG_TARGET_x86=y
+          #CONFIG_TARGET_x86_64=y
+          #CONFIG_TARGET_x86_64_Generic=y
+          CONFIG_TARGET_brcm2708=y
+          CONFIG_TARGET_brcm2708_bcm2708=y
+          CONFIG_TARGET_brcm2708_bcm2708_DEVICE_rpi=y
           EOF
 
           # 固件压缩:
