@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: lede树莓派zero W版本编译
+name: lede X86_84版本编译
 
 on:
   push:
