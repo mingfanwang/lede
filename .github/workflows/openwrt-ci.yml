@@ -10,9 +10,9 @@
 name: lede树莓派zero W版本编译
 
 on:
-  push:
-    branches: 
-      - master
+  #push:
+  #  branches: 
+  #    - master
   schedule:
      - cron: 0 20 * * *
   release:
